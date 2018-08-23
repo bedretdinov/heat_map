@@ -1,6 +1,6 @@
 # heat_map
 Тепловая карта для jupyter
-
+\n
 from simplemap import showMap 
 showMap(coordinates=[
     [55.748228, 47.660954],
