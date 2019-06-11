@@ -15,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/heatmap/simplemap.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="41" column="60" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
+            <state relative-caret-position="162">
+              <caret line="41" column="59" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -91,25 +91,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560262788447</updated>
-      <workItem from="1560262789651" duration="465000" />
+      <workItem from="1560262789651" duration="643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="465000" />
+    <option name="totallyTimeSpent" value="643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="707" y="1465" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24958494" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24958494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32963374" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -132,8 +132,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/heatmap/simplemap.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="41" column="60" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
+        <state relative-caret-position="162">
+          <caret line="41" column="59" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
         </state>
       </provider>
     </entry>
