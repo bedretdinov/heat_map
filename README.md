@@ -11,4 +11,4 @@ showMap(coordinates=[
 ], zoom=4,center='55.748228, 47.660954')
 ```
     
-![alt demo](https://github.com/bedretdinov/heat_map/blob/master/orig.jpeg)
+![alt demo](https://github.com/bedretdinov/heat_map/blob/master/fcae5097c1e8ad1486e0bd42a447fcf4-450x280.png)
