@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
    name='heatmap',
@@ -6,5 +6,8 @@ setup(
    description='heat map with yandex map',
    author='Nader Bedretdinov',
    author_email='php-job@mail.ru',
-   packages=['heatmap'] 
+   packages=find_packages()
 )
+
+ 
+
