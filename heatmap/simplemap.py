@@ -4,15 +4,18 @@
 def showMap(coordinates,zoom=5, center='55.748228, 37.660954', radius=15, opacities=0.6):
 	from IPython.display import display, HTML 
 	import json
+        import datetime
+        ts_id = str(datetime.datetime.now().timestamp()).replace('.','')
+
 	js = '''
 	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> 
 	<script src="http://yandex.github.io/mapsapi-heatmap/Heatmap.min.js" type="text/javascript"></script> 
-	<div id="mapTypeId" style='width: 100%; height: 699px; background: gainsboro;'></div>
+	<div id="mapTypeId_'''+ts_id+'''" style='width: 100%; height: 699px; background: gainsboro;'></div>
 	<script>
 	 
 	var data = '''+json.dumps(coordinates)+''';
 		ymaps.ready(function () {
-		    var map = new ymaps.Map('mapTypeId', {
+		    var map = new ymaps.Map('mapTypeId_'''+ts_id+'''', {
 		            center: ['''+str(center)+'''], 
 		            controls: ['zoomControl',   'fullscreenControl'],
 		            zoom: '''+str(zoom)+''', type: 'yandex#satellite', 
