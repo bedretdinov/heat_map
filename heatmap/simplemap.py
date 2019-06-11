@@ -3,9 +3,9 @@
 
 def showMap(coordinates,zoom=5, center='55.748228, 37.660954', radius=15, opacities=0.6):
 	from IPython.display import display, HTML 
-	import json
-        import datetime
-        ts_id = str(datetime.datetime.now().timestamp()).replace('.','')
+	import json 
+	import datetime
+	ts_id = str(datetime.datetime.now().timestamp()).replace('.','')
 
 	js = '''
 	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> 
