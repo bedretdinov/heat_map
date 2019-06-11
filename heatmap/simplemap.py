@@ -1,8 +1,8 @@
 
 
 
-def showMap(coordinates,zoom=5, center='55.748228, 37.660954'):
-	from IPython.display import display, HTML
+def showMap(coordinates,zoom=5, center='55.748228, 37.660954', radius=15, opacities=0.6):
+	from IPython.display import display, HTML 
 	import json
 	js = '''
 	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> 
@@ -15,7 +15,7 @@ def showMap(coordinates,zoom=5, center='55.748228, 37.660954'):
 		    var map = new ymaps.Map('mapTypeId', {
 		            center: ['''+str(center)+'''], 
 		            controls: ['zoomControl',   'fullscreenControl'],
-		            zoom: '''+str(zoom)+''', type: 'yandex#satellite'
+		            zoom: '''+str(zoom)+''', type: 'yandex#satellite', 
 		        }),
 	 
 		        gradients = [{
@@ -38,8 +38,8 @@ def showMap(coordinates,zoom=5, center='55.748228, 37.660954'):
 		    ymaps.modules.require(['Heatmap'], function (Heatmap) {
 		        var heatmap = new Heatmap(data, {
 		            gradient: gradients[0],
-		            radius: radiuses[1],
-		            opacity: opacities[2]
+		            radius:'''+str(radius)+''',
+		            opacity:'''+str(opacities)+''',
 		        });
 		        heatmap.setMap(map);
 
