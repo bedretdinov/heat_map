@@ -12,8 +12,7 @@ def showMap(coordinates,zoom=5, center='55.748228, 37.660954', radius=15, opacit
 	<script src="http://yandex.github.io/mapsapi-heatmap/Heatmap.min.js" type="text/javascript"></script> 
 	<div id="mapTypeId_'''+ts_id+'''" style='width: 100%; height: 699px; background: gainsboro;'></div>
 	<script>
-	 
-	var data'''+ts_id+''' = '''+json.dumps(coordinates)+''';
+	  
 		ymaps.ready(function () {
 		    var map = new ymaps.Map('mapTypeId_'''+ts_id+'''', {
 		            center: ['''+str(center)+'''], 
@@ -39,7 +38,7 @@ def showMap(coordinates,zoom=5, center='55.748228, 37.660954', radius=15, opacit
 		    map.setType('yandex#map')
 
 		    ymaps.modules.require(['Heatmap'], function (Heatmap) {
-		        var heatmap = new Heatmap(data'''+ts_id+''', {
+		        var heatmap = new Heatmap('''+json.dumps(coordinates)+''', {
 		            gradient: gradients[0],
 		            radius:'''+str(radius)+''',
 		            opacity:'''+str(opacities)+''',
@@ -83,7 +82,7 @@ def showMap(coordinates,zoom=5, center='55.748228, 37.660954', radius=15, opacit
 		            }
 		        }
 		    });
-		}); 
+		});  
 	</script> 
 	'''
 	display(HTML(js))
