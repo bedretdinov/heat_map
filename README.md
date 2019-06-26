@@ -1,4 +1,4 @@
-# heat_map
+# heat map for jupyter
 Тепловая карта для jupyter  
 
 ```python
